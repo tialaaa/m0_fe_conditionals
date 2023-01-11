@@ -100,15 +100,44 @@ var age = 1;
 
 // YOU DO:
 // Determine if the dog loves to play and loves treats
-
+// log expected: true
+console.log(lovesToPlay && lovesTreats);
 
 // Determine if the dog loves to play and loves the dog park
-
+// log expected: false
+console.log(lovesToPlay && lovesDogPark);
 
 // Determine if the dog loves to play or loves the dog park
-
+// log expected: true
+console.log(lovesToPlay || lovesDogPark)
 
 // Determine if the dog loves to play and is a puppy
+if (age < 1) { 
+    var dogType = "Puppy"
+} else { 
+    var dogType = "Adult"
+}
+if (lovesToPlay === true && dogType === "Puppy") {
+    console.log("true")
+} else {
+    console.log("false") 
+}
+
+console.log("Simplified version 2:")
+if (lovesToPlay === true && age < 1) {
+    console.log("true")
+} else {
+    console.log("false") 
+}
 
 // What did your final line of code evaluate to? Why do you think that is? Explain.
-// ANSWER:
+// ANSWER: This conditional logged "false" after evaluating my two If statements.
+// The first If statement declared the variable dogType as "Puppy" if the variable age was less than 1,
+// otherwise it declared dogType as "Adult".
+// The second If statement used the logical operator && to evaluate multiple conditions
+// which are: if variable lovesToPlay equals true and if dogType equals Puppy.
+// Since our dog is 1 year old, it is not a puppy based on the defined dogType variable,
+// therefore the final log is false.
+
+// If we assume everyone knows that a puppy must be less than 1 year old
+// you could use the simplified version 2 instead.
