@@ -60,20 +60,24 @@ console.log(numberStudents <= 21);
 
 console.log(4 < 9);
 // YOU DO: Explain.
+// This will log the result of the comparison: is 4 less than 9? This should log: true.
 
 var books = 3;
 console.log(4 < books);
 // YOU DO: Explain.
+// This will declare the number variable "books" as 3, and log the result of the comparison: is 4 less than the number of books? This should log: false.
 
 var friends = 6;
 var siblings = 2;
 console.log(friends > siblings);
 // YOU DO: Explain.
+// This will declare two number variables: friends as 6, and siblings as 2. Then it will log the result of the comparison: is friends greater than siblings? This should log: true.
 
 var attendees = 9;
 var meals = 8;
 console.log(attendees !== meals);
 // YOU DO: Explain.
+// This will declare two number variables: attendees as 9, and meals as 8. Then it will log the result of the comparison: is attendees not strictly equal to means? This should log: true.
 
 
 // #-------------------
